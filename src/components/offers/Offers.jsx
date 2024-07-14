@@ -1,7 +1,7 @@
 import React from 'react'
 import assets from '../../assets/Assets'
 
-const images=assets.images
+const images=assets.images;
 
 const Offers = () => {
   return (
