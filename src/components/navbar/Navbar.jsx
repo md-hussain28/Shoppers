@@ -6,18 +6,20 @@ import Sidebar from './Sidebar.jsx';
 const { images } = assets;
 const Navbar = () => {
 
-  const [open, setOpen] = useState('false');
+  const [open, setOpen] = useState(false);
   console.log(open);
 
   return (
-    <> <Sidebar open={open} setOpen={setOpen} />
+    <>
+      
+
       <div className='border-b-2 border-cyan-200 py-3 overflow-x-hidden'>
         <nav className="flex justify-between md:w-8/12 w-11/12 mx-auto  items-center">
           <div className='flex gap-3'>
             <button className='sm:hidden' onClick={() => setOpen(prev => !prev)}>
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="pink">
-  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-</svg>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="pink">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
 
             </button>
 
@@ -33,6 +35,7 @@ const Navbar = () => {
           </div>
         </nav>
       </div>
+      <Sidebar open={open} setOpen={setOpen} />
     </>
   )
 }
