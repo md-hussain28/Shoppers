@@ -7,13 +7,13 @@ import exclusive_image from './images/exclusive_image.png'
 import pintester_icon from './images/pintester_icon.png'
 import whatsapp_icon  from './images/whatsapp_icon.png'
 import instagram_icon from './images/instagram_icon.png'
-
+import dropdown_icon from './images/dropdown_icon.png'
 
 const assets={
     images :{
         logo,logo_big,hero_image,hand_icon,arrow,
         exclusive_image,pintester_icon,whatsapp_icon,
-        instagram_icon
+        instagram_icon,dropdown_icon
     }
 }
 
